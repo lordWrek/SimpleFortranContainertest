@@ -1,0 +1,4 @@
+# ignore compiler generated files
+**__genmod.*
+**/a.out
+
