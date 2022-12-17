@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/docker-existing-dockerfile
 {
-	"name": "Existing Dockerfile",
+	"name": "Intel-OneAPI",
 	"build": {
 		// Sets the run context to one level up instead of the .devcontainer folder.
 		"context": "..",
@@ -11,9 +11,13 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"intel-corporation.oneapi-gdb-debug",
-				"intel-corporation.oneapi-extension-pack",
-				"intel-corporation.oneapi-environment-configurator"
+				"ms-vscode.cpptools",
+				"ms-vscode.cpptools-extension-pack",
+				"fortran-lang.linter-gfortran",
+				"hansec.fortran-ls",
+				"ekibun.fortranbreaker",
+				"ms-vscode.makefile-tools",
+				"ms-vscode.cmake-tools"
 			]
 		}
 	}
@@ -31,5 +35,5 @@
 	// "customizations": {},
 
 	// Uncomment to connect as an existing user other than the container default. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "devcontainer"
+	//"remoteUser": "vscode"
 }
