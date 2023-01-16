@@ -4,3 +4,6 @@
 **.i90
 # ignore CMake generated files (usually the "build" directories 
 **/build
+# ignore Mac stuff
+.DS_Store
+**/.DS_Store
