@@ -1,0 +1,32 @@
+{
+  "version": 3,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 22,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "default",
+      "displayName": "Default Config",
+      "description": "Default build using Unix Makefiles generator",
+      "binaryDir": "./build/${presetName}",
+      "generator": "Unix Makefiles",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    },
+    {
+        "name": "MacM1",
+        "displayName": "Mac M1 Native",
+        "description": "Mac M1 Native build, using Unix Makefiles and gcc 12",
+        "binaryDir": "./build/${presetName}",
+        "generator": "Unix Makefiles",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Release",
+          "CMAKE_C_COMPILER": "/opt/homebrew/bin/gcc-12",
+          "CMAKE_FC_COMPILER": "/opt/homebrew/bin/gfortran-12"
+        }
+      }
+  ]
+}
