@@ -18,7 +18,7 @@ FUNCTION Area(x,y,z)
        REAL(KIND=4) :: AREA
      END FUNCTION AREA
    END INTERFACE 
-     PRINT *, 'Welcome, please enter the&
+     PRINT *, 'Welcome, please enter the &
               &lengths of the 3 sides.'
      READ *, a, b, c
      PRINT *, 'Triangle''s area:  ', Area(a,b,c)
